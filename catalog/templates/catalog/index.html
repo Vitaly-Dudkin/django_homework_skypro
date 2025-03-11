@@ -1,56 +1,58 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="{% static 'catalog/css/style.css' %}" rel="stylesheet">
 </head>
 <body>
     <header> 
-        <a href="index.html"><img src="img/logo.svg" alt="логотип"></a>
+        <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
         <input type="text">
-        <nav>
+        <nav class="menu">
             <ul>
                 <li>
-                    <a href="catalog.html">Каталог</a>
+                    <a href="catalog.html" class="menu__link">Каталог</a>
                 </li>
                 <li>
-                    <a href="#">Корзину</a>
+                    <a href="#" class="menu__link">Корзину</a>
                 </li>
             </ul>
         </nav>
     </header>
 
     <section>
-        <h1>Все, чего заслуживает ваш дом</h1>
-        <p>Наша мебель — ваше отражение</p>
-        <a href="catalog.html">Перейти в каталог</a>
+        <h1 class="title">Все, чего заслуживает ваш дом</h1>
+        <p class="text">Наша мебель — ваше отражение</p>
+        <a href="catalog.html" class="link__catalog">Перейти в каталог</a>
     </section>
     <section>
-        <h2>Специальные предложения</h2>
+        <h2 class="heading">Специальные предложения</h2>
         <img src="img/product1.jpg" alt="желтое кресло">
-        <h3>Кресло VILORA</h3>
-        <p>«Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь ткань</p>
-        <p>21 000</p>
-        <p>28 000</p>
+        <h3 class="product__name">Кресло VILORA</h3>
+        <p class="product__text">«Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь ткань</p>
+        <p class="product__discont">21 000</p>
+        <p class="product_price">28 000</p>
     </section>
     <footer>
-        <h4>Меню</h4>
+        <h4 class="footer__title">Меню</h4>
         <nav>
-            <a href="index.html">Главная</a>
-            <a href="catalog.html">Каталог</a>
-            <a href="#">Корзина</a>
+            <a href="index.html" class="footer__links">Главная</a>
+            <a href="catalog.html" class="footer__links">Каталог</a>
+            <a href="#" class="footer__links">Корзина</a>
         </nav>
-        <h4>Контакты</h4>
-        <a href="#">+7 908 800 80 80</a>
-        <a href="#">help@interier.com</a>
+        <h4 class="footer__title">Контакты</h4>
+        <a href="#" class="footer__links">+7 908 800 80 80</a>
+        <a href="#" class="footer__links">help@interier.com</a>
         <img src="img/vk.svg" alt="логотип вконтакте">
         <img src="img/telegram.svg" alt="логотип телеграма">
         <img src="img/dzen.svg" alt="логотип яндекс_дзен">
         <form action="#">
-            <p>Получайте наши новости и обновления</p>
-            <input type="email">
-            <button type="submit">Подписаться</button>
+            <p class="footer__text">Получайте наши новости и обновления</p>
+            <input type="email" class="footer__email">
+            <button type="submit" class="footer__button">Подписаться</button>
         </form>
     </footer>
 </body>
