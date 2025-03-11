@@ -1,3 +1,16 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  height: 76px;
+}
+
 .menu__link {
   font-size: 16px;
   line-height: 20px;
@@ -7,11 +20,14 @@
   font-weight: 600;
   font-size: 64px;
   line-height: 70px;
+  margin-top: 64px;
+  margin-bottom: 16px;
 }
 
 .text {
   font-size: 24px;
   line-height: 32px;
+  padding-bottom: 16px;
 }
 
 .link__catalog {
@@ -24,6 +40,12 @@
   font-size: 48px;
   line-height: 59px;
   color: #000000;
+  margin-bottom: 32px;
+}
+
+.link__catalog {
+  color: #888888;
+  text-decoration: none;
 }
 
 .product__name {
@@ -31,11 +53,13 @@
   font-size: 24px;
   line-height: 29px;
   color: #000000;
+  margin-bottom: 8px;
 }
 .product__text {
-  font-size: 14 px;
-  line-height: 17 px;
+  font-size: 14px;
+  line-height: 17px;
   color: #888888;
+  padding-bottom: 12px;
 }
 .product__discont {
   font-weight: 500;
@@ -56,18 +80,23 @@
   font-size: 24px;
   line-height: 29px;
   color: #000000;
+  margin-bottom: 12px;
 }
-.footer__links {
+.footer__link {
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
   color: #888888;
   text-decoration: none;
 }
+.footer__link:hover {
+  text-decoration: underline;
+}
 .footer__text {
   font-size: 14px;
   line-height: 16px;
   color: #000000;
+  margin-bottom: 16px;
 }
 .footer__email {
   background: #FFFFFF;

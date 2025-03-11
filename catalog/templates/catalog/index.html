@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My site</title>
     <link href="{% static 'catalog/css/style.css' %}" rel="stylesheet">
 </head>
 <body>
     <header> 
-        <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+        <a href=""><img src="{% static 'catalog/img/logo.svg' %}" alt="логотип"></a>
         <input type="text">
         <nav class="menu">
             <ul>
                 <li>
-                    <a href="catalog.html" class="menu__link">Каталог</a>
+                    <a href="catalog/" class="menu__link">Каталог</a>
                 </li>
                 <li>
                     <a href="#" class="menu__link">Корзину</a>
@@ -30,7 +30,7 @@
     </section>
     <section>
         <h2 class="heading">Специальные предложения</h2>
-        <img src="img/product1.jpg" alt="желтое кресло">
+        <img src="{% static 'catalog/img/product_name.jpg' %}" alt="желтое кресло">
         <h3 class="product__name">Кресло VILORA</h3>
         <p class="product__text">«Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь ткань</p>
         <p class="product__discont">21 000</p>
@@ -39,16 +39,16 @@
     <footer>
         <h4 class="footer__title">Меню</h4>
         <nav>
-            <a href="index.html" class="footer__links">Главная</a>
-            <a href="catalog.html" class="footer__links">Каталог</a>
-            <a href="#" class="footer__links">Корзина</a>
+            <a href="index.html" class="footer__link">Главная</a>
+            <a href="catalog.html" class="footer__link">Каталог</a>
+            <a href="#" class="footer__link">Корзина</a>
         </nav>
         <h4 class="footer__title">Контакты</h4>
-        <a href="#" class="footer__links">+7 908 800 80 80</a>
-        <a href="#" class="footer__links">help@interier.com</a>
-        <img src="img/vk.svg" alt="логотип вконтакте">
-        <img src="img/telegram.svg" alt="логотип телеграма">
-        <img src="img/dzen.svg" alt="логотип яндекс_дзен">
+        <a href="#" class="footer__link">+7 908 800 80 80</a>
+        <a href="#" class="footer__link">help@interier.com</a>
+        <img src="{% static 'catalog/img/vk.svg' %}" alt="логотип вконтакте">
+        <img src="{% static 'catalog/img/telegram.svg' %}" alt="логотип телеграма">
+        <img src="{% static 'catalog/img/dzen.svg' %}" alt="логотип яндекс_дзен">
         <form action="#">
             <p class="footer__text">Получайте наши новости и обновления</p>
             <input type="email" class="footer__email">
