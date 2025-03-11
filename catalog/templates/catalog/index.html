@@ -9,12 +9,12 @@
 </head>
 <body>
     <header> 
-        <a href=""><img src="{% static 'catalog/img/logo.svg' %}" alt="логотип"></a>
+        <a href="{% url 'catalog:home_page' %}"><img src="{% static 'catalog/img/logo.svg' %}" alt="логотип"></a>
         <input type="text">
         <nav class="menu">
             <ul>
                 <li>
-                    <a href="catalog/" class="menu__link">Каталог</a>
+                    <a href="{% url 'catalog:catalog' %}" class="menu__link">Каталог</a>
                 </li>
                 <li>
                     <a href="#" class="menu__link">Корзину</a>
@@ -26,7 +26,7 @@
     <section>
         <h1 class="title">Все, чего заслуживает ваш дом</h1>
         <p class="text">Наша мебель — ваше отражение</p>
-        <a href="catalog.html" class="link__catalog">Перейти в каталог</a>
+        <a href="{% url 'catalog:catalog' %}" class="link__catalog">Перейти в каталог</a>
     </section>
     <section>
         <h2 class="heading">Специальные предложения</h2>
@@ -39,8 +39,8 @@
     <footer>
         <h4 class="footer__title">Меню</h4>
         <nav>
-            <a href="index.html" class="footer__link">Главная</a>
-            <a href="catalog.html" class="footer__link">Каталог</a>
+            <a href="{% url 'catalog:home_page' %}" class="footer__link">Главная</a>
+            <a href="{% url 'catalog:catalog' %}" class="footer__link">Каталог</a>
             <a href="#" class="footer__link">Корзина</a>
         </nav>
         <h4 class="footer__title">Контакты</h4>
