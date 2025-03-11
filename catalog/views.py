@@ -8,3 +8,7 @@ from django.views.generic import ListView
 class ProductListView(ListView):
     model = Product
     template_name = 'catalog/index.html'
+
+class CatalogListView(ListView):
+    model = Product
+    template_name = 'catalog/catalog.html'
